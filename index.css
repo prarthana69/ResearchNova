@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --color-navy: #0a0f1e;
+  --color-navy-light: #111827;
+  --color-surface: #1a2035;
+  --color-border: #2d3748;
+  --color-text: #e2e8f0;
+  --color-muted: #94a3b8;
+  --color-accent: #6366f1;
+  --color-violet: #8b5cf6;
+  --color-cyan: #22d3ee;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-navy);
+  color: var(--color-text);
+  font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-navy-light);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted);
+}
+
+/* Focus */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Prose for markdown content */
+.prose-research h1 { font-size: 1.5rem; font-weight: 700; margin: 1.5rem 0 0.75rem; color: #f8fafc; }
+.prose-research h2 { font-size: 1.25rem; font-weight: 600; margin: 1.25rem 0 0.5rem; color: #f1f5f9; }
+.prose-research h3 { font-size: 1.1rem; font-weight: 600; margin: 1rem 0 0.4rem; color: #e2e8f0; }
+.prose-research p { margin: 0.75rem 0; color: #cbd5e1; }
+.prose-research ul, .prose-research ol { padding-left: 1.5rem; margin: 0.5rem 0; }
+.prose-research li { margin: 0.25rem 0; color: #cbd5e1; }
+.prose-research strong { color: #f1f5f9; font-weight: 600; }
+.prose-research blockquote { border-left: 3px solid #6366f1; padding-left: 1rem; color: #94a3b8; margin: 1rem 0; }
+.prose-research code { background: #1e293b; padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-size: 0.875rem; }
+.prose-research hr { border-color: #2d3748; margin: 1.5rem 0; }
